@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pedro R. Carvalho</title>
-  <meta name="description" content="Pedro R. Carvalho" />
+  <title>PC</title>
+  <meta name="description" content="PC" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
@@ -29,6 +29,23 @@
       flex-direction: column;
     }
 
+    header {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    a.dot {
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #d4d4d4;
+      transition: background 0.2s;
+      flex-shrink: 0;
+    }
+
+    a.dot:hover { background: #a3a3a3; }
+
     main {
       flex: 1;
       display: flex;
@@ -50,38 +67,7 @@
       font-weight: 500;
       color: #262626;
       letter-spacing: -0.025em;
-      margin-bottom: 1.5rem;
     }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.75rem 1.5rem;
-    }
-
-    a.link {
-      font-size: 0.875rem;
-      color: #525252;
-      text-decoration: none;
-      border-bottom: 1px solid #e5e5e5;
-      padding-bottom: 1px;
-      transition: color 0.15s, border-color 0.15s;
-    }
-
-    a.link:hover {
-      color: #171717;
-      border-color: #a3a3a3;
-    }
-
-    a.link-arrow {
-      font-size: 0.875rem;
-      color: #a3a3a3;
-      text-decoration: none;
-      transition: color 0.15s;
-    }
-
-    a.link-arrow:hover { color: #525252; }
 
     footer { margin-bottom: 2rem; }
 
@@ -91,14 +77,12 @@
   </style>
 </head>
 <body>
+  <header>
+    <a class="dot" href="https://pcarv.vercel.app" aria-label="Projects"></a>
+  </header>
   <main>
-    <p class="eyebrow">Pedro R. Carvalho</p>
+    <p class="eyebrow">PC</p>
     <h1>Hello.</h1>
-    <div class="links">
-      <a class="link" href="https://www.linkedin.com/in/pedrorcarvalho/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a class="link" href="https://github.com/pcarv" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a class="link-arrow" href="https://pcarv.vercel.app">Projects &rarr;</a>
-    </div>
   </main>
   <footer></footer>
 </body>
